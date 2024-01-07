@@ -1,0 +1,7 @@
+#ifndef _WIFI_SETTINGS_
+#define _WIFI_SETTINGS_
+
+const char* SSID     = "yourssid";
+const char* PASSWORD = "yourpasswd";
+
+#endif
