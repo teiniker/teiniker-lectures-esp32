@@ -40,7 +40,7 @@ void loop(void)
     {
         sprintf(mqtt_message, "{\"Temperature\":%4.2f, \"Humidity\": %4.2f}", temperature, humidity);
         Serial.println(mqtt_message);
-        client.publish("esp32/module-01", mqtt_message);
+        client.publish("esp32/module-02", mqtt_message);
     }  
     else 
     {
