@@ -134,7 +134,7 @@ Client (null) sending DISCONNECT
 
 Parameters:
 * `-t`: Topic the client subscribes to
-* `-m`: 
+* `-m`: Message
 * `-d`: Debugging mode 
 * `-V mqttv311`: Version number 
 * `-h localhost` 
@@ -166,8 +166,8 @@ We can use any UTF-8 character in topic names, with the exception of the two wil
 characters that we will analyze later: the plus sign (+) and hash (#). 
 Hence, we must avoid + and # in the topic names.
 
-We should avoid creating topics starting with the dollar sign ($) because many MQTT 
-servers publish statistics data related to servers in topics that start with $.
+We should avoid creating topics starting with the dollar sign `$` because many MQTT 
+servers publish statistics data related to servers in topics that start with `$`.
 
 We must maintain consistency when sending messages to different topic names as we do 
 when we save files in different paths.
