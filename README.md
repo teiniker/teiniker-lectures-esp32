@@ -7,8 +7,6 @@ includes both software and hardware aspects.
 
 * [Communication](communication/)
   
-* [FreeRTOS](freertos/)  
-
 * [Cryptography](cryptography/)
 
 
