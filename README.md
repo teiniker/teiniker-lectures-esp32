@@ -5,12 +5,14 @@ includes both software and hardware aspects.
 
 * [Introduction](introduction/)
 
-* [Communication](communication/)
+* [ESP32 Boards](esp32-boards/)
+
+* [Peripherals](communication/)
   
 * [Cryptography](cryptography/)
 
+* [Projects](projects/)
 
 
-## References
 
 *Egon Teiniker, 2022-2024, GPL v3.0* 
