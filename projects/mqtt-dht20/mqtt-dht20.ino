@@ -4,7 +4,7 @@
 
 #include "settings.h"
 
-// Linux: mosquitto_sub -t esp32/counter -d
+// Linux: mosquitto_sub -t dht20/module-01 -d
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -13,10 +13,10 @@ DHT20 DHT;
 void setup(void) 
 {
     Serial.begin(115200);
+    Serial.println("DHT20 Module");
 
-    while (DHT.begin() == false)
-    ;  //  ESP32 default pins 21 22
-    Serial.println(DHT20_LIB_VERSION);    
+    DHT.begin();  //  ESP32 default pins 21 22
+    Serial.println("DHT20 started");    
 
     setup_wifi();
     client.setServer(mqtt_server, 1883);
@@ -40,7 +40,7 @@ void loop(void)
     {
         sprintf(mqtt_message, "{\"Temperature\":%4.2f, \"Humidity\": %4.2f}", temperature, humidity);
         Serial.println(mqtt_message);
-        client.publish("esp32/module-02", mqtt_message);
+        client.publish("dht20/module-02", mqtt_message);
     }  
     else 
     {

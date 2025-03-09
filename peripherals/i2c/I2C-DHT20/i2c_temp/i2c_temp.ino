@@ -4,14 +4,16 @@
 DHT20 DHT;
 char mqtt_message[80];
 
-void setup() {
-  while (DHT.begin() == false)
-    ;  //  ESP32 default pins 21 22
-
+void setup() 
+{
   Serial.begin(115200);
   Serial.print("DHT20 LIBRARY VERSION: ");
   Serial.println(DHT20_LIB_VERSION);
 
+//  while (DHT.begin() == false)
+//    ;  //  ESP32 default pins 21 22
+  DHT.begin();
+  
   Log.begin(LOG_LEVEL_VERBOSE, &Serial);
   Log.setShowLevel(false);
   delay(1000);
