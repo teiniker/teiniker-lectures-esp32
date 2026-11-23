@@ -11,7 +11,6 @@ includes both software and hardware aspects.
   
 * [Cryptography](cryptography/)
 
-* [Projects](projects/)
 
 
 
