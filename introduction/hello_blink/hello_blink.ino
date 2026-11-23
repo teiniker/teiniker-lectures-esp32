@@ -1,4 +1,4 @@
-#define LED_BUILTIN 2 // Not defined in ESP32
+//#define LED_BUILTIN 2 // Not defined in ESP32
 
 void setup() 
 {
@@ -8,7 +8,7 @@ void setup()
 void loop() 
 {
     digitalWrite(LED_BUILTIN, HIGH);   
-    delay(200);                         
+    delay(1000);                         
     digitalWrite(LED_BUILTIN, LOW);     
-    delay(200);                         
+    delay(1000);                         
 }

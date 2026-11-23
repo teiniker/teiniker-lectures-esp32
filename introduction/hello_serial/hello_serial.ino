@@ -1,3 +1,6 @@
+// On ESP32-C6: Enable "USB CDC On Boot" in Tools.
+
+
 void setup() 
 {
     Serial.begin(115200);                     
